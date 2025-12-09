@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Контейнер формы -->
+     <div class="registretion-form_conteiner">
+        <!-- Контент формы -->
+         <div class="registretion-form_content">
+                <a href="index.html" class="back">
+                    <img src="img/back.png" alt="Стрелка" style="width: 66px; height: 50px;">
+                </a>
+                <div class="regestration_text">
+                    <h1>Войти</h1>
+                    <p>Пожалуйста, введите свои данные</p>
+                </div>
+                <div class="input_container">
+                    <p>Email address</p>
+                    <input class="input_user" placeholder="Введите ваш Email">
+                </div>
+                <div class="input_container">
+                    <p>Пароль</p>
+                    <input class="input_user" placeholder="Введите пароль">
+                </div>
+                <div class="check_box">
+                    <input type="checkbox" name="check" style="border-radius: 5px; border-color: #DADADA; height: 28px; width: 28px;">
+                    <p>Запомнить меня</p>
+                </div>
+                <div class="register_with_container">
+                    <button class="register_with_butn">
+                        <h3>Войти через Google</h3>
+                    </button>
+                <button class="register_with_butn">
+                    <h3>Войти через WK</h3>
+                </button>
+                <div class="btn_container">
+                    <button class="btn">
+                        <a href="profil.html" style="text-decoration: none; "><h3 style="color: white;">Войти</h3></a>             
+                    </button>
+                    <a href="form_regis.html" class = "asdsad">
+                        <p>У вас нет учетной записи?</p>
+                        <p>Зарегистрироваться?</p>
+                    </a>
+                </div>
+            </div>
+         </div>
+     </div>    
+</body>
+
+<style>
+/* _________База___________ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    body, html {
+    height: 1080px;
+    background-color: #141414;
+    font-family: 'Comfortaa',"Lato",'sans-serif';
+    } 
+    .registretion-form_conteiner{
+        background-color: #141414;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        padding: 10px 570px;
+}
+/* _________Контент___________ */
+    .registretion-form_content{
+        background-color: #FFFFFF;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 56px 30px;
+        border-radius: 25px;
+        width: 100%;
+        height: 784px;
+        justify-content: center;
+    }
+    .regestration_text{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .regestration_text h1{
+        font-size: 40px;
+    }
+    .regestration_text p{
+        font-size: 17px;
+        font-family: 'Lato', sans-serif;
+        color: #2C2C2C;
+    }
+    
+    .register_with_container{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-family: 'Lato', sans-serif;
+    }
+    .register_with_butn{
+        border-radius: 10px;
+        border-color: #2C2C2C;
+        background-color: white;
+        height: 72px;
+    }
+    .register_with_butn h3{
+        font-size: 20px;
+        font-weight: 300;
+        color: #2C2C2C;
+    }
+    .input_container{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .input_container p{
+        font-size: 17px;
+        color: #2C2C2C;
+        font-family: 'Lato', sans-serif;
+    }
+    .input_user{
+        border-color: #2C2C2C;
+        background-color: white;
+        border-radius: 10px;
+        height: 52px;
+        padding: 0px 20px;
+        color: #2C2C2C;
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .btn_container{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-family: 'Lato', sans-serif;
+    }
+    .btn{
+        border-radius: 10px;
+        background-color: #2C2C2C;
+        color: white;
+        height: 72px;
+        font-size: 17px;
+    }
+    .btn h3{
+        font-weight: 200
+    }
+    .asdsad{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-size: 12px;
+        color: black;
+        text-decoration: none;
+        border-color: #2C2C2C;
+    }
+
+    .check_box{
+        display: flex;
+        gap: 13px;
+        align-items: center;
+    }
+    .check_box p{
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+    }
+
+    
+</style>
+</html>
